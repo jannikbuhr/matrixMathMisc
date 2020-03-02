@@ -1,0 +1,15 @@
+Package: matrixMathMisc
+Title: Matrix Maths helpe functions
+Date: 2020-03-01
+Version: 0.0.0.9000
+Authors@R: person('Jannik', 'Buhr',
+    email = 'jannik.m.buhr@gmail.com', role = c('cre', 'aut'),
+    comment = c(ORCID = '0000-0002-9350-2629'))
+Description: Provide Matrix Maths helpe functions from Rcpp / RcppEigen
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    Rcpp (>= 1.0.3),
+    RcppEigen
+LinkingTo: Rcpp, RcppEigen

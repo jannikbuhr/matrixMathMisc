@@ -1,0 +1,53 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# matrixMathMisc
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of matrixMathMisc is to provide access to RcppEigen functions
+for fast matrix maths.
+
+## Installation
+
+Install from github via
+
+```{r, eval=FALSE}
+# install remotes with install.packages("remotes") if necessary
+remotes::install_github("jannikbuhr/matrixMathMisc")
+```
+
+
+## Example
+
+We load the library, generate a 10x10 matrix of random
+numbers and show, that the `pow` function indeed
+calculates powers of this matrix.
+
+```{r example}
+library(matrixMathMisc)
+
+m <- matrix(rnorm(100), nrow = 10)
+all(m %*% m == pow(m, 2))
+all(m %*% m %*% m == pow(m, 3))
+```
+
+It also works for real valued exponents:
+
+```{r}
+pow(m, 3.2)[1:3, 1:3]
+```
+
