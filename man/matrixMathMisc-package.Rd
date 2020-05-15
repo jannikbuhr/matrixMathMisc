@@ -23,14 +23,16 @@ Maintainer: \packageMaintainer{matrixMathMisc}
 }
 \references{
 ~~ Literature or other references for background information ~~
+TODO
 }
 ~~ Optionally other standard keywords, one per line, from file ~~
 ~~ KEYWORDS in the R documentation directory ~~
 \keyword{ package }
 \seealso{
 ~~ Optional links to other man pages, e.g. ~~
-~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
+~~ TODO ~~
+TODO
 }
 \examples{
-~~ simple examples of the most important functions ~~
+~~ # none ~~s
 }
